@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "catbox.moe"
+version = "0.1.0"
+description = "A simple Python wrapper for the Catbox API"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "httpx>=0.28.1",
+]
+
+[tool.setuptools]
+packages = ["catbox"]
+
+[tool.ruff.lint]
+ignore = ["ALL"]
